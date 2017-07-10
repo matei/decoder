@@ -3,7 +3,8 @@
 Sample java code to decrypt AES encrypted token
 
 Instructions: 
-- Put the decryption key in resources/application.conf
+- Clone the repo
+- Put the decryption key in src/resources/application.conf
 - Build the app:
 ```
 mvn package
