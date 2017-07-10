@@ -16,8 +16,6 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <addClasspath>true</addClasspath>
-                            <classpathPrefix>lib/</classpathPrefix>
                             <mainClass>com.optaros.tokendecoder.Decoder</mainClass>
                         </manifest>
                     </archive>
@@ -25,7 +23,6 @@
             </plugin>
         </plugins>
     </build>
-
 
     <dependencies>
         <dependency>
