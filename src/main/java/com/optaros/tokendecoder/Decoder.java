@@ -6,7 +6,7 @@ import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
 /**
- * AWS-CBC token decoder
+ * AES-CBC token decoder
  * Created by matei.stefanescu on 06/07/2017.
  */
 public class Decoder {
