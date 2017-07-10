@@ -37,7 +37,14 @@ public class Decoder {
 
 
     public static void main(String[] args) throws Exception {
-        String encryptedToken = "rT7UpXjSMfFqK2s9S2ZsZA3hqGp3+gXiVWd48biLXMGP74VbMruHhBKncE+SbYHIHk398M2778EgkN+eJBfFtGdGfwfhBqlfFFU2WSonQmo0mAQ+bzB7Nviu0kpMmGNaDvy6ggUArnhlcn9atrFbGOHz5c02C4UNgY2+puohUg3BvCkqtInqvr71wQ6MUBwthZ0nsO25x5Qoi8vo8W9ilg==:JH+MhcKL14RnT+X9lkNfQA==";
+
+        if (args.length == 0)
+        {
+            System.out.println("Please specify encrypted token as first parameter");
+            System.exit(1);
+        }
+
+        String encryptedToken = args[0];
 
         Config config = ConfigFactory.load();
         Decoder decoder = new Decoder();
